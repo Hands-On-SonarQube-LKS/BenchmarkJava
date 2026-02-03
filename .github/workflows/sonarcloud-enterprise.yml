@@ -2,9 +2,7 @@ name: SonarQube
 on:
   push:
     branches:
-      - master
-      - develop
-      - revert-*
+      - '**'
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
