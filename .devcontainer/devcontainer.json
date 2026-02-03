@@ -1,0 +1,31 @@
+{
+  "name": "SonarQube Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "SonarSource.sonarlint-vscode",
+        "io.github.SonarSource.sonarqube-mcp-server",
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-maven"
+      ],
+      "settings": {
+        "sonarlint.connectedMode.project": {
+          "projectKey": "your-project-key"
+        }
+      }
+    }
+  },
+  
+  "forwardPorts": [9000],
+  
+  "remoteUser": "vscode"
+}
