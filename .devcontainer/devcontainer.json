@@ -1,6 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {},
+  "name": "Configuración de Sonar",
   "customizations": {
     "vscode": {
       "extensions": [
