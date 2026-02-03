@@ -3,7 +3,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "sonarsource.sonarlint-vscode"
+        "SonarSource.sonarlint-vscode"
       ]
     }
   }
