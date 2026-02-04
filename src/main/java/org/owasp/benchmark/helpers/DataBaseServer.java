@@ -59,10 +59,9 @@ public class DataBaseServer {
             throws ServletException, IOException {
         List<XMLMessage> resp = new ArrayList<XMLMessage>();
         String sql = "SELECT * from USERS";
-        try {
-            java.sql.Connection connection =
-                    org.owasp.benchmark.helpers.DatabaseHelper.getSqlConnection();
-            java.sql.PreparedStatement statement = connection.prepareStatement(sql);
+        try (java.sql.Connection connection =
+                        org.owasp.benchmark.helpers.DatabaseHelper.getSqlConnection();
+                java.sql.PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.execute();
             org.owasp.benchmark.helpers.DatabaseHelper.printResults(statement, sql, resp);
         } catch (java.sql.SQLException e) {
