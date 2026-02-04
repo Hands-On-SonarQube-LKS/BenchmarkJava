@@ -4,7 +4,6 @@
     "vscode": {
       "extensions": [
         "SonarSource.sonarlint-vscode",
-        "SonarSource.sonar-mcp"
       ]
     }
   }
