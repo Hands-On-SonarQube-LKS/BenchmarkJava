@@ -59,7 +59,7 @@ public class BenchmarkTest00045 extends HttpServlet {
         // param).createNewFile();
 
         java.io.FileOutputStream fos =
-                new java.io.FileOutputStream(new java.io.FileInputStream(fileName).getFD()); ) {
+                new java.io.FileOutputStream(new java.io.FileInputStream(fileName).getFD())) {
             response.getWriter()
                     .println(
                             "Now ready to write to file: "
